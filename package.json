@@ -1,0 +1,27 @@
+{
+	"name": "codeocr",
+	"displayName": "Vs Code OCR",
+	"version": "1.0.0",
+	"description": "Une extension cool pour convertir une image en texte avec VSCode",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"activationEvents": [
+		"onCommand:extension.codeocr"
+	],
+	"main": "extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.codeocr",
+				"title": "OCR"
+			}
+		]
+	},
+	"publisher": "ThomasTSWD",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ThomasTSWD/code-ocr.git"
+	},
+	"icon": "icon.png"
+}
