@@ -1,6 +1,6 @@
-# Vs Code OCR
+# VSCode OCR
 
-[![Release](https://img.shields.io/github/v/release/ThomasTSWD/VsCode-OCR)](https://github.com/ThomasTSWD/VsCode-OCR/releases/latest)
+[![Release](https://img.shields.io/github/v/release/ThomasTSWD/VSCode-OCR)](https://github.com/ThomasTSWD/VSCode-OCR/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Extract text from images with OCR, right inside VS Code.
@@ -15,7 +15,7 @@ Extract text from images with OCR, right inside VS Code.
 
 ## Installation
 
-1. Download the latest `.vsix` from the [Releases](https://github.com/ThomasTSWD/VsCode-OCR/releases/latest) page
+1. Download the latest `.vsix` from the [Releases](https://github.com/ThomasTSWD/VSCode-OCR/releases/latest) page
 2. In VS Code, run **Extensions: Install from VSIX...** and select the file
 
 ## Usage
