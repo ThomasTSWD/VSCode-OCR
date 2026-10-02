@@ -8,7 +8,7 @@ Extract text from images with OCR, right inside VS Code.
 ## Features
 
 - Right-click an image in the Explorer and extract its text in one step
-- Drag and drop, browse or paste (Ctrl+V) an image into the OCR panel
+- Drag and drop (hold Shift), browse or paste (Ctrl+V) an image into the OCR panel
 - Copy the result or open it in an editor
 - Runs locally: your images are never uploaded
 - English, French, German, Spanish, Italian, Portuguese and Dutch
@@ -20,7 +20,7 @@ Extract text from images with OCR, right inside VS Code.
 
 ## Usage
 
-Right-click a PNG, JPEG, BMP, WebP or GIF file and choose **Extract Text from Image**, or run **OCR: Open OCR Panel** from the Command Palette. Set the default language with `codeocr.defaultLanguage`.
+VS Code needs **Shift** held to drop a file onto the panel. Right-click a PNG, JPEG, BMP, WebP or GIF file and choose **Extract Text from Image**, or run **OCR: Open OCR Panel** from the Command Palette. Set the default language with `codeocr.defaultLanguage`.
 
 ## Requirements
 

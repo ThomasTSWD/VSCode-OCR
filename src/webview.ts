@@ -216,7 +216,7 @@ export function getHtml(nonce: string, language: string): string {
 	</header>
 
 	<div class="drop" id="drop" role="button" tabindex="0" aria-label="Choose an image">
-		<strong>Drop an image here</strong>
+		<strong>Drop an image here (hold Shift while dropping)</strong>
 		<span>or click to browse, or paste one with Ctrl+V</span>
 		<span>PNG, JPEG, BMP, WebP, GIF</span>
 	</div>
