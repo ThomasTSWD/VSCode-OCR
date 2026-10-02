@@ -1,27 +1,103 @@
 {
-	"name": "codeocr",
-	"displayName": "Vs Code OCR",
-	"version": "1.0.0",
-	"description": "Une extension cool pour convertir une image en texte avec VSCode",
-	"engines": {
-		"vscode": "^1.60.0"
-	},
-	"activationEvents": [
-		"onCommand:extension.codeocr"
-	],
-	"main": "extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.codeocr",
-				"title": "OCR"
-			}
-		]
-	},
-	"publisher": "ThomasTSWD",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ThomasTSWD/code-ocr.git"
-	},
-	"icon": "icon.png"
+  "name": "codeocr",
+  "displayName": "Vs Code OCR",
+  "description": "Extract text from images with OCR, right inside VS Code.",
+  "version": "1.0.147",
+  "author": "ThomasTSWD",
+  "publisher": "ThomasTSWD",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasTSWD/VsCode-OCR"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasTSWD/VsCode-OCR/issues"
+  },
+  "homepage": "https://github.com/ThomasTSWD/VsCode-OCR#readme",
+  "icon": "images/icon.png",
+  "keywords": [
+    "ocr",
+    "image",
+    "text",
+    "tesseract",
+    "extract"
+  ],
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": false
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeocr.open",
+        "title": "Open OCR Panel",
+        "category": "OCR",
+        "icon": "$(file-media)"
+      },
+      {
+        "command": "codeocr.recognizeImage",
+        "title": "Extract Text from Image",
+        "category": "OCR"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "codeocr.recognizeImage",
+          "when": "resourceScheme == file && resourceExtname =~ /^\\.(png|jpe?g|bmp|webp|gif)$/i",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "codeocr.open"
+        },
+        {
+          "command": "codeocr.recognizeImage",
+          "when": "false"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "OCR",
+      "properties": {
+        "codeocr.defaultLanguage": {
+          "type": "string",
+          "default": "eng",
+          "enum": ["eng", "fra", "deu", "spa", "ita", "por", "nld"],
+          "enumItemLabels": ["English", "French", "German", "Spanish", "Italian", "Portuguese", "Dutch"],
+          "description": "Language used to recognize text. Its data is downloaded once, on first use."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "test": "npm run compile && node --test \"out/**/*.test.js\"",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/vscode": "^1.120.0",
+    "@vscode/vsce": "^4.0.0",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  }
 }

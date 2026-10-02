@@ -1,0 +1,13 @@
+.vscode/**
+.github/**
+src/**
+.gitignore
+RELEASE_NOTES.md
+*.vsix
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+out/**/*.test.js
+node_modules/tesseract.js/dist/**
+node_modules/tesseract.js/docs/**
