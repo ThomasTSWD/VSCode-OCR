@@ -2,7 +2,7 @@
   "name": "codeocr",
   "displayName": "Vs Code OCR",
   "description": "Extract text from images with OCR, right inside VS Code.",
-  "version": "1.0.147",
+  "version": "1.1.0",
   "author": "ThomasTSWD",
   "publisher": "ThomasTSWD",
   "license": "MIT",
