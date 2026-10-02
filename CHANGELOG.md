@@ -3,6 +3,12 @@
 All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-10-02
+
+### Fixed
+
+- Dropping an image on the panel opened it in a new tab: the panel now says to hold Shift while dropping
+
 ## [1.1.0] - 2026-10-02
 
 ### Added
