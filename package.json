@@ -3,17 +3,17 @@
   "displayName": "VSCode OCR",
   "description": "Extract text from images with OCR, right inside VS Code.",
   "version": "1.1.2",
-  "author": "ThomasTSWD",
-  "publisher": "ThomasTSWD",
+  "author": "thomas-serment",
+  "publisher": "thomas-serment",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ThomasTSWD/VSCode-OCR"
+    "url": "https://github.com/thomas-serment/VSCode-OCR"
   },
   "bugs": {
-    "url": "https://github.com/ThomasTSWD/VSCode-OCR/issues"
+    "url": "https://github.com/thomas-serment/VSCode-OCR/issues"
   },
-  "homepage": "https://github.com/ThomasTSWD/VSCode-OCR#readme",
+  "homepage": "https://github.com/thomas-serment/VSCode-OCR#readme",
   "icon": "images/icon.png",
   "keywords": [
     "ocr",
